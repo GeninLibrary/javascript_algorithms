@@ -1,0 +1,39 @@
+/* Javascript: Build an object that you can call to create PowerRangers */
+
+function PowerRangerCreator(name, color, zord) {
+	
+	this.name = name;
+	this.color = color;
+	this.zord = zord;
+	console.log(this);
+};
+
+var Triny = new PowerRangerCreator("Triny","Yellow","Saber-Tooth"}; 
+
+----------
+
+/* Javascript: Build an object that you can call to create pets */
+
+function Pet(name,age,fur) {
+	
+	this.name = name;
+	this.age = age;
+	this.fur = fur;
+	console.log(this);
+};
+
+var pet1 = new Pet("Gregor","12 years old","tawny");
+
+
+----------
+
+# Python: Build a class that instantiates "pets"
+
+class Pet(object):
+	def __init__(self,name,age,fur):
+		# self = {}	------------->		# This is self = {} is never actually included in the
+		self.name = name			# in the __init__() method, but runs implicitly when a		      self.age = age		     	      #  new instance is created from the "Pet" class. Think		    self.fur = fur			    # of it like this: the class must create an empty copy							  # of itself before it can pass the new instance its								# attributes
+	def speak(self):
+		print pet1.name,pet1.age,pet1.fur
+
+pet1 = Pet("Gregor","12 years old", "tawny")

@@ -1,0 +1,16 @@
+/* Write a function that checks data type of argument 
+and console.log a response based on that type */
+
+function checkType(x) {
+	if  (typeof(x) ===  'string') {
+		console.log("It's a baby string");
+	}
+	if (typeof(x) === 'number') {
+		console.log("It's a number");
+	}
+	else {
+		console.log("Yo, dawg, not cool")
+	}
+}
+
+checkType(53)

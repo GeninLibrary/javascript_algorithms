@@ -1,0 +1,15 @@
+# Function in Python
+
+teacher = {
+	'name': 'Rey',
+	'height': '6',
+	'celeb_look_alike': 'Denzel baby',
+	'hit_points': 'feelings'
+	}
+
+def getInfo(x):
+	for key,val in x.iteritems():
+		print key,'=', val
+
+
+getInfo(teacher)
